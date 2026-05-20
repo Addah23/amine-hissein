@@ -3,19 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AMINE Hissein Dagga — Communicant d'Entreprise</title>
+  <title>Portfolio — AMINE Hissein (Carousel)</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <style>
     :root{--g:#1DB954;--bg:#0a0a0a;--tx:#f0ede8;--mu:#888;--ca:#1a1a1a;--bs:rgba(255,255,255,.06)}
-    html,body{height:100%;margin:0}
-    body{background:var(--bg);color:var(--tx);font-family:'DM Sans',sans-serif}
-    /* Basic layout kept simple for carousel version */
-    .wrap{max-width:1200px;margin:3rem auto;padding:0 1rem}
-    .nlogo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;color:var(--g)}
-    .hname{font-family:'Bebas Neue',sans-serif;font-size:3.4rem;color:var(--g);margin:0}
-    .htitle{color:var(--mu);margin:0 0 1.2rem}
-
-    /* Carousel */
+    body{background:var(--bg);color:var(--tx);font-family:'DM Sans',sans-serif;margin:0;padding:0}
+    .wrap{max-width:1100px;margin:3rem auto;padding:0 1rem}
+    .hname{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--g);margin-bottom:.25rem}
+    .htitle{color:var(--mu);margin-bottom:1.2rem}
+    /* Carousel (same styles) */
     .carousel{position:relative;overflow:hidden;border-radius:10px;border:1px solid var(--bs);background:var(--ca)}
     .carousel-track{display:flex;transition:transform .6s ease}
     .slide{min-width:100%;box-sizing:border-box;padding:1rem;display:flex;gap:1rem;align-items:flex-end}
@@ -30,25 +26,14 @@
     .carousel-dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.35);cursor:pointer}
     .carousel-dots button.active{background:var(--g)}
     @media(max-width:768px){.slide img{height:240px}}
-
-    /* small utilities */
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem}
-    footer{color:var(--mu);text-align:center;margin-top:1.8rem}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="nlogo">AHD</div>
-      <nav aria-label="Navigation principale"><a href="#portfolio" style="color:var(--mu);text-decoration:none">Voir le portfolio</a></nav>
-    </header>
+    <div class="hname">Portfolio — Version Carousel</div>
+    <div class="htitle">Exemples de créations</div>
 
-    <h1 class="hname">AMINE Hissein DAGGA</h1>
-    <div class="htitle">Communicant d'Entreprise & Community Manager</div>
-
-    <h2 style="color:var(--tx);margin:1.6rem 0">Mon <span style="color:var(--g)">Portfolio</span></h2>
-
-    <div id="portfolio" class="carousel" aria-roledescription="carousel">
+    <div class="carousel" aria-roledescription="carousel">
       <div class="carousel-track">
         <div class="slide">
           <img src="Image Portefolio 1.jpeg" alt="Bon Début de Carême — FaariPlus Mutuelle Santé">
@@ -72,7 +57,7 @@
       <div class="carousel-dots" role="tablist" aria-label="Navigation du carrousel"></div>
     </div>
 
-    <footer>Version carousel — branched on feat/carousel</footer>
+    <p style="color:var(--mu);margin-top:1.2rem">Page additionnelle créée automatiquement pour tester le carousel. Si tu veux, je peux remplacer le fichier principal par cette version après ton accord.</p>
   </div>
 
   <script>
